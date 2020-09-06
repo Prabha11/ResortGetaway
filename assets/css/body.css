@@ -25,3 +25,13 @@
     margin: 0px auto;
     transition: opacity 400ms ease 0s;
 }
+
+ul {
+    list-style-type: none;
+}
+
+ul li::before {
+    content: "\f058";
+    font-family: "Font Awesome 5 Free";
+    padding: 0 10px 0 0;
+}

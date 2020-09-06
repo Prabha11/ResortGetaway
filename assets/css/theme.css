@@ -21,3 +21,7 @@
     background-image: linear-gradient(rgb(0, 128, 138), rgb(0, 170, 189));
     /*background-image: linear-gradient(rgb(149, 10, 184), rgb(174, 0, 255));*/
 }
+
+ul li::before {
+    color: rgb(0, 170, 189) !important;
+}
