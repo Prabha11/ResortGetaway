@@ -1,0 +1,130 @@
+@import "animations.css";
+
+.slide-base {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.slide-image {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    animation: RightToLeftAnimate 25s linear infinite;
+}
+
+@media (max-width: 767px) {
+    .slide-image {
+        width: 200%;
+    }
+}
+
+.slide-image-cloud {
+    position: absolute;
+    bottom: 40vh;
+    width: 100%;
+    animation: RightToLeftAnimate 20s linear infinite;
+}
+
+.duplicate-image {
+    transform: translate(100%);
+}
+
+.slide-flight {
+    position: absolute;
+    top: 30%;
+    height: 100px;
+    animation: LefTotRightAnimate 20s linear infinite;
+}
+
+.slide-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.slide-content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    padding-top: 20px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.87);
+}
+
+.slide-content-section {
+    display: flex;
+    justify-content: center;
+}
+
+.slide-button {
+    border-radius: 20px;
+    width: 100%;
+    color: white;
+    padding: 18px 44px;
+    border: 0;
+    align-self: center;
+    font-weight: 400;
+    font-size: 18px;
+    transition-duration: 200ms;
+    text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+    .slide-button {
+        font-size: 12px;
+        width: 90vw;
+    }
+}
+
+.slide-white-lined-button {
+    border: 1px solid rgb(174, 0, 255);
+    color: rgb(174, 0, 255) !important;
+    background-color: rgba(255, 255, 255, 0.12);
+    background-image: none !important;
+}
+
+.slide-button:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.slide-button-container {
+    padding-top: 30px;
+}
+
+.slide-clock-container {
+    align-self: center;
+}
+
+.slide-text-container {
+    text-align: center;
+}
+
+.slide-big-text {
+    font-size: 30px;
+}
+
+.slide-mid-text {
+    font-size: 250px;
+}
+
+.slide-sm-text {
+    font-size: 20px;
+}
+
+@media (max-width: 767px) {
+    .slide-big-text {
+        font-size: 40px;
+    }
+    .slide-mid-text {
+        font-size: 33px;
+    }
+    .slide-sm-text {
+        font-size: 25px;
+    }
+}

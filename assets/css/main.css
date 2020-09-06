@@ -1,0 +1,53 @@
+@import 'slide.css';
+@import 'widget.css';
+@import 'theme.css';
+@import 'content.css';
+@import 'images.css';
+
+nav {
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1), 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+    /*background-image: linear-gradient(rgb(255, 255, 255), rgba(253, 253, 253, 0));*/
+}
+
+.logo {
+    fill: green;
+}
+
+body {
+    overflow-x: hidden;
+    color: rgb(26, 26, 26);
+}
+
+.company-logo-nav-bar {
+    height: 50px;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.288);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.pz {
+    padding: 0px;
+}
+
+.min-pad {
+    padding: 5px !important;
+}
