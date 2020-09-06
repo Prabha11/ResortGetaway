@@ -22,22 +22,29 @@
     }
 }
 
-.slide-image-cloud {
+.slide-image-beach {
     position: absolute;
-    bottom: 40vh;
-    width: 100%;
-    animation: RightToLeftAnimate 20s linear infinite;
+    height: 100vh;
+    min-width: 100vw;
+}
+
+@media (max-width: 767px) {
+    .slide-image-beach {
+        width: 200%;
+    }
 }
 
 .duplicate-image {
     transform: translate(100%);
 }
 
-.slide-flight {
+.slide-tropical {
     position: absolute;
-    top: 30%;
-    height: 100px;
-    animation: LefTotRightAnimate 20s linear infinite;
+    right: 0 !important;
+    bottom: 0;
+    /*width: 100vw;*/
+    max-height: 100%;
+    /*animation: rotate 3s alternate-reverse infinite;*/
 }
 
 .slide-overlay {
