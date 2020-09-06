@@ -7,7 +7,6 @@
     top: 0;
     left: 0;
     overflow: hidden;
-    z-index: -100000;
 }
 
 @media (max-width: 767px) {
@@ -33,14 +32,13 @@
 
 .slide-image-beach {
     position: absolute;
-    height: 100vh;
+    height: 120vh;
     min-width: 100vw;
 }
 
 @media (max-width: 767px) {
     .slide-image-beach {
-        width: 150%;
-
+        height: 90vh;
     }
 }
 
