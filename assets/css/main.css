@@ -21,7 +21,7 @@ nav {
 }
 
 body {
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     color: black;
     font-size: 18px;
     font-family: 'PT Sans', sans-serif;
