@@ -1,0 +1,17 @@
+.lg-only {
+    display: block;
+}
+
+.sm-only {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .lg-only {
+        display: none !important;
+    }
+
+    .sm-only {
+        display: block !important;
+    }
+}

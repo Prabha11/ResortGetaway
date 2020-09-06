@@ -7,6 +7,14 @@
     top: 0;
     left: 0;
     overflow: hidden;
+    z-index: -100000;
+}
+
+@media (max-width: 767px) {
+    .slide-base {
+        height: 70vh;
+        position: fixed;
+    }
 }
 
 .slide-image {
@@ -14,6 +22,7 @@
     bottom: 0;
     width: 100%;
     animation: RightToLeftAnimate 25s linear infinite;
+    z-index: -100;
 }
 
 @media (max-width: 767px) {
@@ -30,7 +39,8 @@
 
 @media (max-width: 767px) {
     .slide-image-beach {
-        width: 200%;
+        width: 150%;
+
     }
 }
 
@@ -44,9 +54,16 @@
     bottom: 0;
     /*width: 100vw;*/
     max-height: 100%;
-    /*animation: rotate 3s alternate-reverse infinite;*/
+    transform-origin: bottom right;
+    animation: swing 5s alternate-reverse infinite;
 }
 
+@media (max-width: 767px) {
+    .slide-tropical {
+        height: 70%;
+
+    }
+}
 .slide-overlay {
     position: absolute;
     width: 100%;
@@ -61,7 +78,6 @@
     transform: translate(-50%, -50%);
     padding-top: 20px;
     border-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.87);
 }
 
 .slide-content-section {

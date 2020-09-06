@@ -1,0 +1,27 @@
+.handle {
+    height: 34px;
+    transform: translate(0, -16px);
+    background-color: white !important;
+    top: 0;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+}
+
+.floater {
+    height: 0.4rem;
+    width: 8rem;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    top: 2rem;
+    opacity: 1;
+    background: rgb(110, 110, 110);
+    border-radius: 0.8rem;
+    margin: 0px auto;
+    transition: opacity 400ms ease 0s;
+}

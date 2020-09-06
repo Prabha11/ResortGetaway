@@ -3,6 +3,9 @@
 @import 'theme.css';
 @import 'content.css';
 @import 'images.css';
+@import 'layout.css';
+@import 'responsive.css';
+@import 'body.css';
 
 nav {
     align-items: center;
@@ -19,8 +22,28 @@ nav {
 
 body {
     overflow-x: hidden;
-    color: rgb(26, 26, 26);
+    color: black;
+    font-size: 18px;
+    font-family: 'Ubuntu', sans-serif;
 }
+
+@media (max-width: 767px) {
+    body {
+        padding-top: 70vh;
+    }
+}
+
+.top-container {
+    background-color: white;
+}
+
+
+@media (max-width: 767px) {
+    .top-container {
+        transform: translate(0, -17px);
+    }
+}
+
 
 .company-logo-nav-bar {
     height: 50px;
