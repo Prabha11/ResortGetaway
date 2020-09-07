@@ -94,3 +94,7 @@
     top: 10px;
 }
 
+.round-corner {
+    border-radius: 16px !important;
+}
+
