@@ -95,6 +95,15 @@
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;
     z-index: 10;
+    padding-top: 200px;
+    padding-bottom: 30px;
+}
+
+@media (max-width: 767px) {
+    .sky-background {
+        padding-top: 50px !important;
+        background-color: #0093d7;
+    }
 }
 
 .sky-only-background {
