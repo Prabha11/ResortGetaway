@@ -101,3 +101,7 @@ h6 {
 .min-pad {
     padding: 5px !important;
 }
+
+.center {
+    text-align: center;
+}
