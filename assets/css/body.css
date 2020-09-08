@@ -145,3 +145,26 @@ ul.quote-box li {
     padding-right: 8px;
 }
 
+.icon-card {
+    display: flex;
+    border-radius: 16px;
+    padding: 10px;
+    background-color: #1b1e21;
+    /*box-shadow: 0 1px 4px 2px rgba(0,0,0,0.2);*/
+    margin-bottom: 10px;
+}
+
+.icon-card img {
+    height: 100px;
+}
+
+.icon-card div {
+    padding-left: 15px;
+    color: #d5d5d5;
+}
+
+@media (max-width: 767px) {
+    .icon-card div {
+        font-size: 14px;
+    }
+}
