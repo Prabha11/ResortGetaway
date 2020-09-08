@@ -65,7 +65,7 @@
                             <p class="header-p-font">We will help you to manage and book perfect vacation packages, hotels, cruises for your budget and requirements.</p>                        
                         </div>
                         <div>
-                            <button class="btn btn-success btn-lg header-btn-font">
+                            <button class="btn btn-success btn-lg header-btn-font form-btn">
                                 Get more details about packages
                            </button>                        
                         </div>
@@ -83,7 +83,7 @@
         <div class="row">
             <div class="col-sm-12">
                 <p class="main-notification-text font-color-white">
-                    <i class="fas fa-comment-dots fa-2x"></i>
+                    <a href="https://resortgetaway.com/en/" style="color: white;"><i class="fas fa-link fa-1x"></i></a>
                 </p>
             </div>       
         </div>
@@ -97,7 +97,7 @@
                     <div class="center">
                         <p class="main-head-text">Do not wait more! Book your vacation today</p>
                         <p class="gray-p-text text-justify">How can you say no to this vacation with this special, luxurious and affordable offer? Click on the button below, you deserve this vacation!</p>
-                        <button class="btn btn-success btn-lg header-btn-font">
+                        <button class="btn btn-success btn-lg header-btn-font form-btn">
                             Get offer using this link
                         </button>   
                     </div>
@@ -595,10 +595,103 @@
     </div>
 </div>
 
+<div class="form-div" style="display: none;">
+    <div class="rectangle close-form-btn">
+        <div class="row">
+            <div class="col-sm-12">
+                <p class="main-notification-text font-color-white">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </p>
+            </div>       
+        </div>
+    </div>    
+    <div class="container middle-div-form">
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+                <p class="main-head-text text-center">Interested in knowing more?</p>
+                <p class="gray-p-text text-center">Send us your details and receive this detailed offer in your email</p>
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+        <div class="row subscribe-lap" style="display: none;">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-4">
+                <input type="email" class="form-control" placeholder="Enter your First Name">
+            </div>
+            <div class="col-sm-4">
+                <input type="email" class="form-control" placeholder="Enter your Last Name">
+            </div>
+            <div class="col-sm-2"></div>                        
+        </div>
+        <div class="row subscribe-phone" style="display: none;">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-4" style="margin-bottom: 20px;">
+                <input type="email" class="form-control" placeholder="Enter your First Name">
+            </div>
+            <div class="col-sm-4">
+                <input type="email" class="form-control" placeholder="Enter your Last Name">
+            </div>
+            <div class="col-sm-2"></div>                        
+        </div>        
+        <br>
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-3">
+                <div class="form-group">
+                    <select class="form-control form_controller_font" id="phone-number-country" name="phone-number-country" autocomplete="off"></select>
+                </div>                              
+            </div>
+            <div class="col-xs-4 col-sm-1" style="margin-bottom: 20px;">
+                <div class="form-control phone-number-prefix"></div>
+            </div>                          
+            <div class="col-xs-8 col-sm-4">
+                <div class="form-group">
+                    <div class="phone-number">
+                        <input class="form-control input-field" id="phone-number" name="phone-number" type="tel" autocomplete="off">
+                        <input type="hidden" id="phone-number-full" name="phone-number-full" />
+                    </div>
+                </div>                              
+            </div>
+            <div class="col-sm-2"></div>                          
+        </div>
+        <div class="row subscribe-lap" style="display: none;">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-5">
+                <input type="email" class="form-control" placeholder="Enter your Email">
+            </div>
+            <div class="col-sm-2">
+                <button class="btn btn-success btn-lg header-btn-font">
+                    Submit
+                </button>
+            </div>
+        </div>
+
+        <div class="center">
+            <div class="row subscribe-phone" style="display: none;">
+                <div class="col-sm-12" style="margin-bottom: 20px;">
+                    <input type="email" class="form-control" placeholder="Enter your Email">
+                </div>
+                <div class="col-sm-12">
+                    <button class="btn btn-success btn-lg header-btn-font">
+                        Submit
+                    </button>
+                </div>
+            </div>
+        </div>                
+    </div>
+
+</div>
+
 </body>
 </html>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script src="https://1cf5229636340d3e1dd5-0eccc4d82b7628eccb93a74a572fd3ee.ssl.cf1.rackcdn.com/testing/intlTelInput.min.js"></script>
+<script src="https://1cf5229636340d3e1dd5-0eccc4d82b7628eccb93a74a572fd3ee.ssl.cf1.rackcdn.com/testing/jquery.formatter.min.js"></script>
+
+<script type="text/javascript" src="assets/js/tel_number_get.js"></script>
 
 <script>
     /* package hover*/
@@ -618,6 +711,18 @@
     $(".close-subscribe-btn").click(function(){
         $(".main-body").show(0);
         $(".subscribe-div").hide(0);
+    });
+
+    /*form-btn*/
+    $(".form-btn").click(function(){
+        $(".main-body").hide(0);
+        $(".form-div").show(0);
+    });
+    
+    /*form-close-btn*/
+    $(".close-form-btn").click(function(){
+        $(".main-body").show(0);
+        $(".form-div").hide(0);
     });
 
 </script>

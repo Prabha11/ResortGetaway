@@ -610,7 +610,11 @@ video.fillWidth {
     margin-left: -15px !important;
 }
 
-.close-subscribe-btn{
+.middle-div-form {
+    margin-top: 10% !important;
+}
+
+.close-subscribe-btn, .close-form-btn{
   background-color: #28a745;
   position: fixed;
   top: 10px;
