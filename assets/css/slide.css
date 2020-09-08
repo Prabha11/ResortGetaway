@@ -70,6 +70,14 @@ body{
     animation: swing 5s alternate-reverse infinite;
 }
 
+.slide-wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 300px;
+}
+
 @media (max-width: 767px) {
     .slide-tropical {
         height: 70%;
