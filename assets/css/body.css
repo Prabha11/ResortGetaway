@@ -168,3 +168,12 @@ ul.quote-box li {
         font-size: 14px;
     }
 }
+
+.centered-item {
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.icon {
+    width: 50%;
+}
