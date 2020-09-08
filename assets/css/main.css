@@ -58,7 +58,7 @@ h6 {
 
 @media (max-width: 767px) {
     body {
-        padding-top: 70vh;
+        /*padding-top: 70vh;*/
     }
 }
 

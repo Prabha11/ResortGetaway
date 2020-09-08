@@ -16,7 +16,7 @@ body{
 @media (max-width: 767px) {
     .slide-base {
         height: 70vh;
-        position: fixed;
+        position: relative;
     }
 
   .subscribe-phone{
@@ -639,6 +639,8 @@ video.fillWidth {
     .slide-content {
         left: 50vw;
         transform: translate(-50%);
+        top: 15%;
+
     }
 
     .slide-content-text {
@@ -655,7 +657,6 @@ video.fillWidth {
         font-size: 20px;
         text-align: center;
         color: #000000;
-        font-weight: 1000;
-        text-shadow: 0px 0px 3px #ffffff;
+        font-weight: 900;
     }
 }
