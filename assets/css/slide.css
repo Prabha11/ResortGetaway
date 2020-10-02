@@ -612,8 +612,8 @@ video.fillWidth {
 
 .middle-div-form {
     margin-top: 2% !important;
-    background-image: -webkit-linear-gradient(left,#1976bc 0%,#8dc645 100%);
-    border-radius: 10px;
+    background-image: url(../images/vector/longsky.svg);
+background-size: cover;
 }
 
 
